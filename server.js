@@ -6,7 +6,7 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logger");
 const erroHandle = require("./middleware/errorHandler");
-const PORT = process.env.PORT || 3500
+const PORT = process.env.PORT || 300
 const app = express();
 
 connectDB();
