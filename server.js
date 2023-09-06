@@ -6,10 +6,12 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logger");
 const erroHandle = require("./middleware/errorHandler");
+const access = require("./middleware/access");
 const PORT = process.env.PORT || 300
 const app = express();
 
 connectDB();
+app.use(access);
 app.use(cors(corsOptions))
 app.use(erroHandle)
 app.use(express.json());
