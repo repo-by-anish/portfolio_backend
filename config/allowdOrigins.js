@@ -1,7 +1,6 @@
 const allowedOrigins=[
-    "http://localhost:3000",
+    "https://profile-anish.onrender.com/",
     "",
-    undefined
 ]
 
 module.exports=allowedOrigins
