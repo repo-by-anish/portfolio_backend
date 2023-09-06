@@ -1,5 +1,5 @@
 const allowedOrigins=[
-    "https://profile-anish.onrender.com/",
+    "https://profile-anish.onrender.com",
     "",
 ]
 
