@@ -88,7 +88,8 @@ const createMessage = async (req, res) => {
     </html>
 `;
 
-    const info = await transporter.sendMail({
+try{
+        const info = await transporter.sendMail({
         from: '"Anish Kumar 📧📩" anishkumar62072@gmail.com',
         to: email,
         subject: "Hello ✔",
@@ -96,6 +97,9 @@ const createMessage = async (req, res) => {
         html: emailContent,
     });
     console.log(info);
+}catch(e)=>{
+    console.log(e);
+}
 
     const createMessage = await Message.create({ name, email, message });
 
