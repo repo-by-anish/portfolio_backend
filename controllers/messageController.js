@@ -97,7 +97,7 @@ try{
         html: emailContent,
     });
     console.log(info);
-}catch(e)=>{
+}catch(e){
     console.log(e);
 }
 
